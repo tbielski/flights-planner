@@ -1,0 +1,7 @@
+As a Passenger I want to track my mileage so that I can then exchange it for bonus points.
+
+As an Admin I want to add and remove passengers from flights so that I can fill planes.
+
+As an Admin I want to add flights to repository so that I can have database of current flights.
+
+As a Passenger I want to find specified flight so that I can book it.

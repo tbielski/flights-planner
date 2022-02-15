@@ -1,0 +1,53 @@
+Name: Passenger Policy Remove
+
+Description: Removing passenger from a flight.
+
+Preconditions: The passenger and flight are created and flight has added a passenger.
+
+Postconditions: The flight will not have passenger added.
+
+Basic Course of Action:
+
+1. The use case begins when an admin wants to remove passenger from a flight.
+
+2. The system checks which type of flight is it. [Alt Course A, B, C]
+
+
+
+Alternate Course A: BusinessFlight
+
+A.3. The system doesn't remove passenger and return False.
+
+A.4. The use case ends.
+
+
+Alternate Course B: EconomyFlight
+
+B.3. The system checks if passenger is VIP [Alt Course D]
+
+B.4. The system doesn't remove passenger and return False.
+
+B.5. The use case ends.
+
+
+Alternate Course C: PremiumFlight
+
+C.3. The system checks if passenger is VIP [Alt Course E]
+
+C.4. The system removes passenger and return True.
+
+C.5. The use case ends.
+
+
+Alternate Course D: Passenger is not a VIP
+
+D.4. The system removes passenger and return True.
+
+D.5. The use case ends.
+
+
+Alternate Course E: Passenger is not a VIP
+
+E.4. The system doesn't remove passenger and return False.
+
+E.5. The use case ends.

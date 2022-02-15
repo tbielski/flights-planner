@@ -1,0 +1,37 @@
+Name: Passenger Policy Add
+
+Description: Adding passenger to a flight.
+
+Preconditions: The passenger and flight are created.
+
+Postconditions: The passenger will be added to a flight.
+
+Basic Course of Action:
+
+1. The use case begins when an admin wants to add passenger to a flight.
+
+2. The system checks which type of flight is it. [Alt Course A, B]
+
+
+
+Alternate Course A: BusinessFlight or PremiumFlight
+
+A.3. The system checks if passenger is VIP [Alt Course D]
+
+A.4. The system adds passenger and return True.
+
+A.5. The use case ends.
+
+
+Alternate Course D: Passenger is not a VIP
+
+D.4. The system doesn't add passenger and return False.
+
+D.5. The use case ends.
+
+
+Alternate Course B: EconomyFlight
+
+B.3. The system adds passenger and return True.
+
+B.4. The use case ends.

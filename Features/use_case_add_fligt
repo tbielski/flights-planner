@@ -1,0 +1,15 @@
+Name: Add Flight
+
+Description: Adding flight to a flights repository.
+
+Preconditions: The flight repository is created.
+
+Postconditions: The flight is added to a flight repository.
+
+Basic Course of Action:
+
+1. The use case begins when an admin wants to add flight to a flight repository.
+
+2. The system adds flight to a flight repository.
+
+3. The use case ends.

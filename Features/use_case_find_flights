@@ -1,0 +1,37 @@
+Name: Find Flights
+
+Description: Finding flights by parameters.
+
+Preconditions: The flight repository is created and it has added flights.
+
+Postconditions: The correct flight was found.
+
+Basic Course of Action:
+
+1. The use case begins when a passenger wants to find a flight.
+
+2. The system searches for flights based on the parameters provided ignoring flights with no available places.
+
+3. The system check if there was provided 'category' argument. [Alt Course A, B, C]
+
+
+
+Alternate Course A: Category argument was not provided.
+
+A.4. The system returns array of all flights that match provided parameters.
+
+A.5. The use case ends.
+
+
+Alternate Course B: Category argument was: 'cheapest'.
+
+B.4. The system returns cheapest flight that match provided parameters.
+
+B.5. The use case ends.
+
+
+Alternate Course C: Category argument was: 'fastest'.
+
+C.4. The system returns fastest flight that match provided parameters.
+
+C.5. The use case ends.

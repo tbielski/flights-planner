@@ -1,0 +1,29 @@
+Name: Bonus Policy
+
+Description: Tracking Passenger's mileage and exchanging it to bonus points.
+
+Preconditions: The passenger is created and he has made a flight.
+
+Postconditions: The passenger will have bonus points for his flights.
+
+Basic Course of Action:
+
+1. The use case begins after a passenger made a flight.
+
+2. The system checks if it was first flight of this passenger. [Alt Course A]
+
+3. The system assigns mileage to a passenger.
+
+4. The system calculates points from mileage based on type of passenger.
+
+5. The use case ends when the points are calculated.
+
+
+
+Alternate Course A: The Passenger has already made a flight.
+
+A.3. The system adds mileage to a previous mileage of the Passenger.
+
+A.4. The system calculates points from new mileage based on type of passenger.
+
+A.5. The use case ends when the points are calculated.
